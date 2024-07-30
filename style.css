@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.ins-wrapper {
+  width: 900px;
+  height: 630px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+sup {
+  font-size: 10px;
+}
+
+p {
+  margin: 5px;
+}
+
+.ins-container {
+  padding: 6px;
+  width: 250px;
+  height: 280px;
+  box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ins-container-header,
+.ins-container-header-GNC,
+.ins-container-header-DVRTM {
+  flex: 3;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.ins-container-header {
+  background-color: #1fcafc;
+}
+
+.ins-container-header-GNC {
+  background-color: #fec900;
+}
+
+.ins-container-header-DVRTM {
+  background-color: #2b4054;
+}
+
+.ins-container-header div:nth-child(4),
+.ins-container-header-GNC div:nth-child(4),
+.ins-container-header-DVRTM div:nth-child(4) {
+  position: absolute;
+  bottom: -8px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 15px solid white;
+}
+
+.ins-container-header-DVRTM div:nth-child(5)::before {
+  content: "+";
+  position: absolute;
+  top: 95px;
+  left: 30px;
+  font-weight: bolder;
+  color: white;
+  font-size: 25px;
+}
+
+.ins-container-header-DVRTM div:nth-child(6)::before {
+  content: "SOSYAL MEDYA";
+  position: absolute;
+  top: 115px;
+  left: 85px;
+  font-weight: bolder;
+  color: white;
+  font-size: 12px;
+}
+
+.ins-container-header-DVRTM div:nth-child(7)::before {
+  content: "2000 DK Her Yöne";
+  position: absolute;
+  bottom: 35px;
+  left: 6px;
+  color: white;
+  font-size: 12px;
+}
+
+.ins-container-footer {
+  flex: 1;
+  color: #2755ac;
+  padding: 4px 0;
+}
+
+.ins-container-footer p:nth-child(2) {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.ins-header-title {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.ins-header-title > div {
+  margin: 12px 8px;
+}
+
+.ins-header-title div:nth-child(1) {
+  background-color: #eeb118;
+  padding: 4px 6px 2px 6px;
+  border-radius: 4px;
+}
+
+.ins-container-header-GNC .ins-header-title div:nth-child(1) {
+  background-color: #2755ac;
+}
+
+.ins-header-title div:nth-child(2) span {
+  background-color: white;
+  padding: 2px 5px;
+  margin-left: 4px;
+  cursor: pointer;
+  border-radius: 50%;
+  color: black;
+}
+
+.ins-header-content {
+  flex: 3;
+  color: white;
+  position: relative;
+}
+
+.ins-header-content p:nth-child(2) {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.ins-header-footer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 8px;
+}
+
+.ins-header-footer p {
+  cursor: pointer;
+  background-color: white;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 30px;
+}
+
+.ins-container .ins-container-footer p:nth-child(3) {
+  color: #616d78;
+}
+
+.ins-container-header-DVRTM .ins-header-content p:nth-child(3) {
+  margin-top: 12px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.ins-container-header-DVRTM .ins-header-footer {
+  flex: 4;
+}
+
+.ins-container-footer-DVRTM {
+  flex: 2;
+  color: #2755ac;
+  padding: 4px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ins-container-footer-DVRTM div:nth-child(1) p:nth-child(2) {
+  font-size: 20px;
+}
+
+.ins-container-footer-DVRTM div:nth-child(2) {
+  color: black;
+}
+
+.ins-container-footer-DVRTM div:nth-child(2) p:nth-child(2) {
+  font-size: 16px;
+  font-weight: bold;
+  width: 80px;
+}
+
+.ins-header-footer p:hover {
+  background-color: #0056b3;
+  color: white;
+  transition: 0.4s all ease-in;
+}
+
+.ins-header-title div:nth-child(2) span:hover {
+  background-color: #967272;
+  color: white;
+  transition: 0.6s all ease-in;
+  font-size: 16px;
+}
+
+.ins-header-title div:nth-child(1) {
+  animation-duration: 4s;
+  animation-name: example;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  25% {
+    background-color: #2755ac;
+  }
+  50% {
+    background-color: #90a5d0;
+  }
+  75% {
+    background-color: #c7b483;
+  }
+  100% {
+    background-color: #eeb118;
+  }
+}
